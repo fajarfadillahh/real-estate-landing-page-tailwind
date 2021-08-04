@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Landing Page Using Tailwindcss</title>
+
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+  </head>
+  <body class="mt-16 md:m-0">
+    <!-- HEADER SECTION -->
+    <header
+      class="
+        l-header
+        fixed
+        w-full
+        top-0
+        left-0
+        z-50
+        px-4
+        bg-blue-100
+        md:bg-transparent
+      "
+      id="header"
+    >
+      <div class="container mx-auto md:px-24">
+        <nav
+          class="nav h-16 flex justify-between items-center md:relative md:h-20"
+        >
+          <!-- Header Logo -->
+          <div>
+            <a
+              href="#"
+              class="nav__logo text-xl font-bold text-blue-900 md:text-2xl"
+              >Bensik.</a
+            >
+          </div>
+
+          <!-- Header Menu -->
+          <div
+            class="
+              nav__menu
+              md:flex
+              md:items-center
+              md:relative
+              md:w-auto
+              md:top-auto
+              md:mx-0
+              md:p-0
+              md:bg-transparent
+              fixed
+              w-80
+              -top-full
+              left-0
+              right-0
+              mx-auto
+              text-center
+              p-8
+              bg-gray-50
+              rounded-xl
+              transition-all
+              duration-300
+            "
+            id="nav-menu"
+          >
+            <ul
+              class="
+                nav__list
+                text-sm
+                font-light
+                text-gray-200
+                md:flex md:text-base md:mr-10
+              "
+            >
+              <li class="nav__item mb-6 md:mb-0 md:mx-4">
+                <a href="#" class="nav__link font-bold text-blue-900">Home</a>
+              </li>
+              <li class="nav__item mb-6 md:mb-0 md:mx-4">
+                <a href="#" class="nav__link">Feature</a>
+              </li>
+              <li class="nav__item mb-6 md:mb-0 md:mx-4">
+                <a href="#" class="nav__link">Service</a>
+              </li>
+              <li class="nav__item mb-6 md:mb-0 md:mx-4">
+                <a href="#" class="nav__link">Listed</a>
+              </li>
+              <li class="nav__item mb-6 md:mb-0 md:mx-4">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Header Button -->
+            <div>
+              <a
+                href="#"
+                class="
+                  nav__button
+                  md:text-base
+                  flex
+                  justify-center
+                  py-4
+                  px-8
+                  bg-blue-900
+                  rounded-xl
+                  text-sm
+                  font-medium
+                  text-white
+                "
+                >Register</a
+              >
+            </div>
+          </div>
+
+          <!-- Header Toggle -->
+          <div
+            class="nav__toggle text-2xl cursor-pointer text-blue-900 md:hidden"
+            id="nav-toggle"
+          >
+            <i class="bx bx-menu"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER SECTION -->
+
+    <main class="l-main">
+      <!-- HOME SECTION -->
+      <section class="home bg-blue-100 md:h-screen">
+        <div
+          class="
+            home__container
+            container
+            mx-auto
+            grid
+            gap-y-16
+            px-4
+            md:grid md:grid-cols-2 md:h-full md:px-24 md:content-center
+          "
+        >
+          <div class="home__data pt-16 md:pt-0 md:self-center">
+            <p
+              class="
+                home__welcome
+                text-sm
+                font-medium
+                text-gray-200
+                mb-2
+                md:text-base
+              "
+            >
+              Welcome to Bensik Agency
+            </p>
+            <h1
+              class="
+                home__title
+                md:text-6xl
+                text-4xl
+                font-bold
+                leading-tight
+                text-blue-900
+                mb-8
+              "
+            >
+              Discover a place <br />you'll love to live.
+            </h1>
+            <p class="home__text text-sm text-gray-200 mb-10 md:text-base">
+              Get the best real estate deals first, before they <br />
+              hit the mass market! hot foreclosure deals with one simple search.
+            </p>
+            <a
+              href="#"
+              class="
+                home__button
+                md:text-base
+                inline-flex
+                justify-center
+                py-4
+                px-8
+                bg-blue-900
+                rounded-xl
+                text-white text-sm
+                font-medium
+              "
+              >More About Us</a
+            >
+          </div>
+
+          <img
+            src="./src/img/home-image.png"
+            alt=""
+            class="home__img md:absolute md:w-2/5 md:bottom-0 md:right-16"
+          />
+        </div>
+      </section>
+      <!-- HOME SECTION -->
+    </main>
+
+    <!-- SCROLL REVEAL ANIMATION -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
